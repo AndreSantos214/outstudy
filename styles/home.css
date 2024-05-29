@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #e7ecf1;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 70px;
+  background-color: #527da2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 140px;
+  z-index: 1; 
+  position: relative; 
+}
+
+
+.sidebar .nav-menu :hover {
+  background-color: #B1DAEC;
+  transition: background-color 0.6s;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-item {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #1b2637;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.menu-item img {
+  display: block;
+  margin: 0 auto 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.5%;
+  background: linear-gradient(87.58deg, #0c141f 30.2%, #3a5b7d 98%);
+  color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; /* O cabeçalho estará sobreposto à barra lateral */
+}
+
+.logo {
+  width: 280px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  position: absolute; /* A logo está posicionada absolutamente */
+  top: 50px; /* Ajuste conforme necessário */
+  left: 15%; /* Ajuste conforme necessário */
+  transform: translateX(-50%); /* Para centralizar horizontalmente */
+}
+
+.user-info {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 250px;
+}
+
+.user-info img {
+  background-color: #d8d8d8;
+  border-radius: 30px;
+}
+
+.user-greeting {
+  margin-right: 10px;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.course-info {
+  flex: 1;
+  position: absolute;
+  top: 5px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px; /* Espaço para a logo e cabeçalho */
+}
+
+.course-card {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 260px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.course-image {
+  width: 100%;
+  height: 60%;
+}
+
+.course-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.course-details .cc1 {
+  padding-left: 40px;
+  justify-content: center;
+  position: relative;
+}
+
+.curso-icone2 {
+ position: absolute;
+ top: 0px;
+ left: 15px;
+}
+
+.alvo-icone {
+  position: absolute;
+  right: 73px;
+}
+
+.course-details .cc2 {
+  padding-right: 25px;
+}
+
+.course-details img {
+  width: 20px;
+}
+
+.course-title,
+.course-progress {
+  font-size: 15px;
+  color: #1b2637;
+}
+
+.course-icon {
+  width: 80px;
+  height: 80px;
+  align-self: center; 
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu-item {
+    padding: 10px 0;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .main-content {
+    margin-top: 70px; /* Ajuste conforme necessário */
+  }
+
+  .header {
+    padding: 50px;
+  }
+
+  .logo {
+    width: 140px;
+    height: 75px;
+    top: 10px; 
+    left: 25%; 
+    transform: translateX(-50%); 
+  }
+
+  .user-info {
+    position: absolute;
+    right: 150px;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .user-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .course-info {
+    margin-top: 120px; /* Ajuste conforme necessário */
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .alvo-icone {
+    position: absolute;
+    right: 65px;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.course-info a {
+  text-decoration: none;
+}
