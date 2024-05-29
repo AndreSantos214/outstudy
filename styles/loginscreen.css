@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("/images/gif_2.gif");
+  background-size: cover; /* para cobrir toda a área */
+  background-position: center; /* para centralizar a imagem */
+  background-attachment: fixed; /* para fixar a imagem */
+  backdrop-filter: blur(8px); /* opcional: efeitos de filtro */
+}
+.welcome-message {
+  font-size: 10px;
+  width: 200px;
+  text-align: center;
+  color: #d9faff;
+}
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -30px; /* Ajuste conforme necessário */
+}
+
+.icon img {
+  max-width: 350px; /* Ajuste conforme necessário */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(27, 38, 49, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: -10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.login-container {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 70%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 50px);
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.login-btn {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  width: 100%;
+  max-width: 315px;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #d9faff;
+}
+
+.checkbox-text a {
+  color: #d9faff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .icon img {
+    max-width: 350px; /* Ajuste conforme necessário */
+  }
+
+  .login-container {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 45px);
+    margin-bottom: 15px;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon img {
+    max-width: 200px; /* Ajuste conforme necessário */
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+
+  .checkbox-text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
