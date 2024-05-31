@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("../images/gif_2.gif");
+  background-image: url("images/curso_tela.jpg");
   background-size: cover; /* para cobrir toda a área */
   background-position: center; /* para centralizar a imagem */
   background-attachment: fixed; /* para fixar a imagem */
