@@ -7,6 +7,8 @@
   <title>Módulos</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/modulos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="botao.js" defer></script>
 </head>
 
 <body>
@@ -84,28 +86,35 @@
         </a>
       </nav>
     </div>
-    <div class="modulos">
-      <div class="introducao">
-        <div class="info-item">
-          <div class="título-modulo">
-            <img src="images/folder.svg" alt="Ícone de Pasta">
-          </div>
+    <a href="javascript://" class="dropdown-botao">
+      <div class="modulos">
+        <div class="introducao">
+          <div class="info-item">
+            <div class="título-modulo">
+              <img src="images/folder.svg" alt="Ícone de Pasta">
+            </div>
             <span>1. Introdução</span>
-        </div>
-        <div class="info-item">
-          <div class="aula-progresso">
-            <img src="images/curso_icone.svg" alt="Ícone de Aula">
           </div>
-          <span>Aulas 2/2</span>
-        </div>
-        <div class="info-item">
-          <div class="progresso-curso">
-            <img src="images/alvo.svg" alt="Alvo">
+          <div class="info-item">
+            <div class="aula-progresso">
+              <img src="images/curso_icone.svg" alt="Ícone de Aula">
+            </div>
+            <span>Aulas 2/2</span>
           </div>
-          <span>100%</span>
+          <div class="info-item">
+            <div class="progresso-curso">
+              <img src="images/alvo.svg" alt="Alvo">
+            </div>
+            <span>100%</span>
+          </div>
         </div>
+        <ul class="dropdown">
+          <li class="aula1"><a href="#">Aula 1</a></li>
+          <li class="aula2"><a href="#"></a>Aula 2</li>
+          <li class="aula3"><a href="#"></a>Aula 3</li>
+        </ul>
       </div>
-    </div>
+    </a>
 
   </div>
 </body>

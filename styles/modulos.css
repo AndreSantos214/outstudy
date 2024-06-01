@@ -66,7 +66,7 @@ body {
 .header {
   width: 100%;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   padding: 3.3%;
   background: linear-gradient(87.58deg, #0c141f 30.2%, #3a5b7d 98%);
@@ -74,19 +74,19 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .header-wrapper {
   width: 40%;
-  max-width: 1000px; 
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .header input {
-  width: 50%; 
+  width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
@@ -103,9 +103,9 @@ body {
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  position: absolute; 
-  top: 50px; 
-  left: 16%; 
+  position: absolute;
+  top: 50px;
+  left: 16%;
   transform: translateX(-50%);
 }
 
@@ -266,7 +266,7 @@ body {
   height: 15px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.1); 
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .introducao {
@@ -277,7 +277,7 @@ body {
 
 .info-item {
   display: flex;
-  align-items: baseline; 
+  align-items: baseline;
 }
 
 .info-item img {
@@ -301,6 +301,53 @@ body {
   right: 6%;
 }
 
+/* DROPDOWN */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+}
+
+.aula1 {
+  position: relative;
+  right: 5%;
+  width: 100%;
+  margin: 5px;
+  background-color: #ffffff;
+  padding: 15px 30px 15px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.aula2 {
+  position: relative;
+  right: 5%;
+  width: 100%;
+  margin: 5px;
+  background-color: #ffffff;
+  padding: 15px 30px 15px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.aula3 {
+  position: relative;
+  right: 5%;
+  width: 100%;
+  margin: 5px;
+  background-color: #ffffff;
+  padding: 15px 30px 15px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 1335px) {
   .logo {
