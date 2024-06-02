@@ -136,7 +136,7 @@ body {
   flex: 1;
   position: absolute;
   top: 55%;
-  left: 100vh;
+  left: 105vh;
   transform: translate(-50%, -50%);
   display: flex;
 }
@@ -244,7 +244,7 @@ body {
   position: relative;
   flex-direction: row;
   top: 73%;
-  left: 33%;
+  left: 35%;
   margin-top: 25px;
   width: 50%;
 }
@@ -260,20 +260,30 @@ body {
 .modulos {
   position: relative;
   top: 85%;
-  right: 20.5%;
+  right: 18.5%;
+  width: 76.5%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shared-style {
   background-color: #ffffff;
-  padding: 20px;
-  width: 79%;
-  height: 15px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .introducao {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+  flex: 1;
+}
+
+.aula-modulo1 {
+  flex: 2;
 }
 
 .info-item {
@@ -317,14 +327,16 @@ a {
 
 .aula {
   position: relative;
-  right: 5%;
-  width: 100%;
-  margin: 5px;
+  right: 4.8%;
+  top: -25%;
+  width: 99%;
+  margin: 3px;
   background-color: #ffffff;
   padding: 15px 30px 15px 15px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  
 }
 
 .aula img {

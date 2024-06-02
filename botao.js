@@ -7,4 +7,13 @@ $(document).ready(function () {
     event.stopPropagation();
   });
 });
-//Subtituir as 2 classes
+
+$(document).ready(function () {
+  var botao = $(".dropdown-botao1");
+  var dropDown = $(".dropdown1");
+
+  botao.on("click", function (event) {
+    dropDown.stop(true, true).slideToggle();
+    event.stopPropagation();
+  });
+});
