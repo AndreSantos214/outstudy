@@ -294,12 +294,12 @@ body {
 
 .aula-progresso {
   position: absolute;
-  right: 49.5%;
+  right: 42%;
 }
 
 .progresso-curso {
   position: absolute;
-  right: 6%;
+  right: 8%;
 }
 
 /* DROPDOWN */
@@ -315,7 +315,7 @@ a {
   display: none;
 }
 
-.aula1 {
+.aula {
   position: relative;
   right: 5%;
   width: 100%;
@@ -327,29 +327,14 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.aula2 {
-  position: relative;
-  right: 5%;
-  width: 100%;
-  margin: 5px;
-  background-color: #ffffff;
-  padding: 15px 30px 15px 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.aula3 {
-  position: relative;
-  right: 5%;
-  width: 100%;
-  margin: 5px;
-  background-color: #ffffff;
-  padding: 15px 30px 15px 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.aula img {
+  width: 18px;
+  margin-right: 5px;
+  float: right;
+  padding: 1px 5px 1px 1px;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1335px) {
   .logo {
     width: 280px;
@@ -357,24 +342,270 @@ a {
     border-radius: 20px;
     object-fit: cover;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    position: absolute; /* A logo está posicionada absolutamente */
-    top: 50px; /* Ajuste conforme necessário */
-    left: 20%; /* Ajuste conforme necessário */
-    transform: translateX(-50%); /* Para centralizar horizontalmente */
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    transform: translateX(-50%);
+  }
+
+  .barra_modulos {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    top: 73%;
+    left: 33%;
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .aula-progresso {
+    position: absolute;
+    right: 38%;
+  }
+
+  .progresso-curso {
+    position: absolute;
+    right: 10%;
+  }
+
+  .aula {
+    position: relative;
+    right: 9%;
+    width: 100%;
+    margin: 5px;
+    background-color: #ffffff;
+    padding: 15px 30px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
-@media (max-width: 1065px) {
-  .logo {
-    width: 280px;
-    height: 150px;
-    border-radius: 20px;
+@media (max-width: 1240px) {
+  .user-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 200px;
+  }
+  /* INFORMAÇÕES DO CONTEÚDO */
+  .course-info {
+    flex: 1;
+    position: absolute;
+    top: 55%;
+    left: 80vh;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  .course-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 500px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-icon {
+    width: 100px;
+    height: 35px;
+    padding-left: 20px;
     object-fit: cover;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    position: absolute; /* A logo está posicionada absolutamente */
-    top: 50px; /* Ajuste conforme necessário */
-    left: 28%; /* Ajuste conforme necessário */
-    transform: translateX(-50%); /* Para centralizar horizontalmente */
+  }
+
+  .curso-icone2 {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+  }
+
+  .alvo-icone {
+    position: absolute;
+    right: 64.5%;
+  }
+
+  /* SOBRE O CONTEÚDO */
+  .sobre {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 300px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex: 2;
+  }
+
+  .progresso-curso {
+    position: absolute;
+    right: 11%;
+  }
+
+  .aula-progresso {
+    position: absolute;
+    right: 36%;
+  }
+}
+
+@media (max-width: 978px) {
+  .sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menu-item {
+    padding: 10px 0;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .main-content {
+    margin-top: 70px; /* Ajuste conforme necessário */
+  }
+
+  .header {
+    padding: 50px;
+  }
+
+  .logo {
+    width: 140px;
+    height: 75px;
+    top: 10px;
+    left: 15%;
+    transform: translateX(-50%);
+  }
+
+  .user-info {
+    position: absolute;
+    right: 110px;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .user-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .course-info {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    width: 230px;
+  }
+
+  .alvo-icone {
+    position: absolute;
+    right: 65px;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .course-info a {
+    text-decoration: none;
+  }
+
+  .user-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 100px;
+  }
+
+  /* INFORMAÇÕES DO CONTEÚDO */
+  .course-info {
+    flex: 1;
+    position: absolute;
+    top: 55%;
+    left: 70vh;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  .course-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 480px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-icon {
+    width: 100px;
+    height: 35px;
+    padding-left: 20px;
+    object-fit: cover;
+  }
+
+  .curso-icone2 {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+  }
+
+  .alvo-icone {
+    position: absolute;
+    right: 63%;
+  }
+
+  /* BARRA DE MÓDULOS, FAVORITOS E ANOTAÇÕES */
+  .barra_modulos {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    top: 73%;
+    left: 25%;
+    margin-top: 25px;
+    width: 1500px;
+  }
+
+  /* SOBRE O CONTEÚDO */
+  .sobre {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex: 2;
+  }
+
+  .progresso-curso {
+    position: absolute;
+    right: 12%;
+  }
+
+  .aula-progresso {
+    position: absolute;
+    right: 33%;
   }
 }
 
@@ -453,8 +684,8 @@ a {
     width: 100%;
     max-width: 300px;
   }
-}
 
-.course-info a {
-  text-decoration: none;
+  .course-info a {
+    text-decoration: none;
+  }
 }
